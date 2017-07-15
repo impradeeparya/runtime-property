@@ -4,6 +4,7 @@
 
 <web-app>
     <display-name>Runtime property loader</display-name>
+    <description>load properties on the basis of profile selected</description>
     <servlet>
         <servlet-name>mvc-dispatcher</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
@@ -14,4 +15,5 @@
         <servlet-name>mvc-dispatcher</servlet-name>
         <url-pattern>/</url-pattern>
     </servlet-mapping>
+
 </web-app>

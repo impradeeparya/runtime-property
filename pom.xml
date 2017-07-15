@@ -11,12 +11,6 @@
     <profiles>
         <profile>
             <id>dev</id>
-            <activation>
-                <property>
-                    <name>env</name>
-                    <value>dev</value>
-                </property>
-            </activation>
             <properties>
                 <env>dev</env>
             </properties>
@@ -24,12 +18,6 @@
 
         <profile>
             <id>qa</id>
-            <activation>
-                <property>
-                    <name>env</name>
-                    <value>qa</value>
-                </property>
-            </activation>
             <properties>
                 <env>qa</env>
             </properties>
@@ -48,6 +36,7 @@
 
     <properties>
         <spring.version>4.0.1.RELEASE</spring.version>
+        <env>local</env>
     </properties>
 
     <dependencies>
@@ -56,6 +45,17 @@
             <artifactId>spring-webmvc</artifactId>
             <version>${spring.version}</version>
         </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.6</version>
+        </dependency>
+
     </dependencies>
     <build>
 
