@@ -5,10 +5,10 @@
        >
 
     <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
-        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
-        <property name="url" value="jdbc:mysql://localhost:3306/localDb"/>
-        <property name="username" value="root"/>
-        <property name="password" value="root"/>
+        <property name="driverClassName" value="${${env}.db.driver}"/>
+        <property name="url" value="${${env}.db.url}"/>
+        <property name="username" value="${${env}.db.username}"/>
+        <property name="password" value="${${env}.db.password}"/>
     </bean>
 
 </beans>
